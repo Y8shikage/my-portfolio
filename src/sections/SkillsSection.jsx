@@ -87,7 +87,7 @@ const SkillsSection = () => {
       id="skills"
       className="relative min-h-screen flex flex-col items-center px-6 py-24"
     >
-      <div className="relative w-full h-[100px] md:h-[150px] mb-20 max-w-4xl mx-auto">
+      <div className="relative w-full h-[100px] md:h-[150px] mb-50 max-w-4xl mx-auto">
         <TextPressure
           text="Skills"
           flex
@@ -102,17 +102,17 @@ const SkillsSection = () => {
         />
       </div>
 
-      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8 max-w-5xl mx-auto w-full mb-16">
+      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-8 md:gap-10 max-w-6xl mx-auto w-full mb-16">
         {skills.map(skill => (
           <div key={skill.name} className="flex justify-center">
             <TiltedCard
               imageSrc={skill.icon}
               altText={skill.name}
               captionText={skill.name}
-              containerHeight="180px"
-              containerWidth="160px"
-              imageHeight="120px"
-              imageWidth="120px"
+              containerHeight="240px"
+              containerWidth="220px"
+              imageHeight="160px"
+              imageWidth="160px"
               rotateAmplitude={12}
               scaleOnHover={1.08}
               showMobileWarning={false}
@@ -122,21 +122,6 @@ const SkillsSection = () => {
             />
           </div>
         ))}
-      </div>
-
-      <div className="max-w-2xl mx-auto text-center">
-        <SplitText
-          text="I studied the basics of design, color theory, and composition"
-          className="text-base md:text-lg text-gray-medium block w-full"
-          delay={25}
-          duration={1}
-          splitType="words"
-          from={{ opacity: 0, y: 25 }}
-          to={{ opacity: 1, y: 0 }}
-          threshold={0.1}
-          rootMargin="-80px"
-          textAlign="center"
-        />
       </div>
     </section>
   );
