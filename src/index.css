@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #5227FF;
+  --color-primary-light: #7B5CF5;
+  --color-dark: #0a0a0f;
+  --color-dark-secondary: #111122;
+  --color-gray-light: #e0e0e0;
+  --color-gray-medium: #888899;
+  --font-sans: 'Montserrat', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0a0f;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #5227FF;
+  border-radius: 3px;
+}
+
+::selection {
+  background: rgba(82, 39, 255, 0.3);
+  color: #fff;
+}
+
+.glass {
+  background: rgba(15, 15, 30, 0.5);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.section-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(82, 39, 255, 0.4), transparent);
+  margin: 0 auto;
+  width: 80%;
+}
+
+.outline-text {
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.7);
+  transition: color 0.4s ease, -webkit-text-stroke-color 0.4s ease;
+}
+
+.outline-text:hover {
+  color: #fff;
+  -webkit-text-stroke-color: transparent;
+}
