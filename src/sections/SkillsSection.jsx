@@ -123,6 +123,7 @@ const SkillsSection = () => {
           </div>
         ))}
       </div>
+      <div className="section-divider" />
     </section>
   );
 };

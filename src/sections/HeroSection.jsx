@@ -74,6 +74,7 @@ const HeroSection = () => {
           />
         </div>
       </div>
+      <div className="section-divider" />
     </section>
   );
 };
