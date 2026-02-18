@@ -5,7 +5,7 @@ const HeroSection = () => {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex flex-col justify-center items-center px-6 py-32"
+      className="relative h-screen shrink-0 flex flex-col justify-center items-center px-6 py-32 overflow-hidden"
     >
       <div className="max-w-4xl mx-auto text-center">
         <SplitText

@@ -7,7 +7,7 @@ const WorkSection = () => {
   return (
     <section
       id="work"
-      className="relative min-h-screen flex flex-col items-center px-6 py-24 overflow-hidden"
+      className="relative h-screen shrink-0 flex flex-col items-center justify-center px-6 py-24 overflow-hidden"
     >
       {/* Solid bg to fully block the main Beams background */}
       <div className="absolute inset-0 z-0 bg-[#0a0a0f]" />

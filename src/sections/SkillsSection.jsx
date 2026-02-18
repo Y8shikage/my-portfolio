@@ -85,7 +85,7 @@ const SkillsSection = () => {
   return (
     <section
       id="skills"
-      className="relative min-h-screen flex flex-col items-center px-6 py-24"
+      className="relative h-screen shrink-0 flex flex-col items-center justify-center px-6 py-24 overflow-hidden"
     >
       <div className="relative w-full h-[100px] md:h-[150px] mb-50 max-w-4xl mx-auto">
         <TextPressure

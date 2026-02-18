@@ -1,9 +1,15 @@
+import { useRef, useEffect } from 'react';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import StaggeredMenu from './components/StaggeredMenu/StaggeredMenu';
 import Beams from './components/Beams/Beams';
 import HeroSection from './sections/HeroSection';
 import EducationSection from './sections/EducationSection';
 import SkillsSection from './sections/SkillsSection';
 import WorkSection from './sections/WorkSection';
+import useSectionSnap from './hooks/useSectionSnap';
+
+gsap.registerPlugin(ScrollTrigger);
 
 const menuItems = [
   { label: 'About me', ariaLabel: 'Go to about section', link: '#home' },
@@ -18,6 +24,15 @@ const socialItems = [
 ];
 
 function App() {
+  const mainRef = useRef(null);
+  useSectionSnap(mainRef);
+
+  useEffect(() => {
+    if (!mainRef.current) return;
+    ScrollTrigger.defaults({ scroller: mainRef.current });
+    ScrollTrigger.refresh();
+  }, []);
+
   return (
     <div className="relative min-h-screen">
       {/* Fixed animated background */}
@@ -51,17 +66,11 @@ function App() {
       />
 
       {/* Main scrollable content */}
-      <main className="relative z-10">
+      <main ref={mainRef} className="relative z-10 h-screen overflow-hidden">
         <HeroSection />
-        <div className="section-divider" />
         <EducationSection />
-        <div className="section-divider" />
         <SkillsSection />
-        <div className="section-divider" />
         <WorkSection />
-
-        {/* Footer spacer */}
-        <div className="h-24" />
       </main>
     </div>
   );

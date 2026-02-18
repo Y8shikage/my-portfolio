@@ -5,7 +5,7 @@ const EducationSection = () => {
   return (
     <section
       id="education"
-      className="relative min-h-screen flex flex-col justify-center items-center px-6 py-24"
+      className="relative h-screen shrink-0 flex flex-col justify-center items-center px-6 py-24 overflow-hidden"
     >
       <div className="relative w-full h-[100px] md:h-[150px] mb-20 max-w-4xl mx-auto">
         <TextPressure
