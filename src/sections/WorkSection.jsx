@@ -103,26 +103,26 @@ const WorkSection = () => {
             >
               <Card customClass="swap-card-project">
                 <div className="w-full h-full flex flex-col items-center justify-center bg-gradient-to-br from-dark-secondary to-dark p-6">
-                  <div className="w-full h-[200px] rounded-lg bg-dark/50 border border-white/10 flex items-center justify-center mb-3">
-                    <span className="text-gray-medium text-sm">novi-jewelry.com</span>
+                  <div className="w-full h-[200px] rounded-lg overflow-hidden mb-3">
+                    <img src="/imgs/novi.png" alt="novi-jewelry.com" className="w-full h-full object-cover" />
                   </div>
                   <span className="text-white text-sm font-medium">novi-jewelry.com</span>
                 </div>
               </Card>
               <Card customClass="swap-card-project">
                 <div className="w-full h-full flex flex-col items-center justify-center bg-gradient-to-br from-dark-secondary to-dark p-6">
-                  <div className="w-full h-[200px] rounded-lg bg-dark/50 border border-white/10 flex items-center justify-center mb-3">
-                    <span className="text-gray-medium text-sm">europe-tc.ru</span>
+                  <div className="w-full h-[200px] rounded-lg overflow-hidden mb-3">
+                    <img src="/imgs/euro.png" alt="europe-tc.ru" className="w-full h-full object-cover" />
                   </div>
                   <span className="text-white text-sm font-medium">europe-tc.ru</span>
                 </div>
               </Card>
               <Card customClass="swap-card-project">
                 <div className="w-full h-full flex flex-col items-center justify-center bg-gradient-to-br from-dark-secondary to-dark p-6">
-                  <div className="w-full h-[200px] rounded-lg bg-dark/50 border border-white/10 flex items-center justify-center mb-3">
-                    <span className="text-gray-medium text-sm">More projects coming soon</span>
+                  <div className="w-full h-[200px] rounded-lg overflow-hidden mb-3">
+                    <img src="/imgs/github.png" alt="GitHub" className="w-full h-full object-cover" />
                   </div>
-                  <span className="text-white text-sm font-medium">Coming soon</span>
+                  <span className="text-white text-sm font-medium">More projects on GitHub</span>
                 </div>
               </Card>
             </CardSwap>

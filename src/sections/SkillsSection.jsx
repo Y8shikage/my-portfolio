@@ -6,62 +6,62 @@ const skills = [
   {
     name: 'HTML',
     level: 4,
-    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg'
+    icon: '/icons/html.svg'
   },
   {
     name: 'CSS',
     level: 4,
-    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg'
+    icon: '/icons/css.svg'
   },
   {
     name: 'JavaScript',
     level: 3,
-    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg'
+    icon: '/icons/javascript.svg'
   },
   {
     name: 'Tailwind',
     level: 4,
-    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg'
+    icon: '/icons/tailwind.svg'
   },
   {
     name: 'SASS',
     level: 4,
-    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg'
+    icon: '/icons/sass.svg'
   },
   {
     name: 'React',
-    level: 2,
-    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg'
+    level: 3,
+    icon: '/icons/react.svg'
   },
   {
     name: 'Laravel',
     level: 2,
-    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg'
+    icon: '/icons/laravel.svg'
   },
   {
     name: 'Python',
     level: 3,
-    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg'
+    icon: '/icons/python.svg'
   },
   {
     name: 'After Effects',
     level: 4,
-    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/aftereffects/aftereffects-original.svg'
+    icon: '/icons/aftereffects.svg'
   },
   {
     name: 'Illustrator',
     level: 3,
-    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/illustrator/illustrator-plain.svg'
+    icon: '/icons/illustrator.svg'
   },
   {
     name: 'Photoshop',
     level: 2,
-    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/photoshop/photoshop-plain.svg'
+    icon: '/icons/photoshop.svg'
   },
   {
     name: 'Cinema 4D',
     level: 2,
-    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cinema4d/cinema4d-plain.svg'
+    icon: '/icons/cinema4d.svg'
   }
 ];
 
